@@ -1,0 +1,331 @@
+/* Efeitos Globais */
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+.container-limitada{
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.container-texto{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 0 20px 0;
+    gap: 10px;
+    width: 600px;
+    color: #737373;
+}
+
+/* Topo da página */
+header{
+    background-color:  #00cad1;
+}
+
+.topo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links-topo a{
+   font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.links-topo a:hover{
+    color: #004b4c;
+}
+
+.container-logotipo img{
+    width: 120px;
+}
+
+/*seção banner da pagina*/
+.secao-banner{
+     width: 100%;
+     height: 500px;
+     background-position: center;
+     background-size: cover;
+    background-image: url('../assets/recepcao.png');
+}
+
+.secao-banner h1{
+    display: flex;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 38px;
+    display: flex;
+    align-items: center;
+    padding-top: 180px;
+    color: #fff;
+ 
+}
+
+/*container informacoes*/
+.container-informacoes{
+    width: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto; 
+    color: #737373;
+}
+
+.container-lista-informacoes{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container-lista-informacoes h3{
+    display: flex;
+    font-size: 18px;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-indent: -40px;
+}
+
+/*seção especialidades*/
+.container-img-especialidades{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.box-especialidades{
+    display: flex;
+}
+
+figure{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 2px 2px 3px 2px #0000005c;
+}
+
+figcaption{
+    text-transform: uppercase;
+    color: #737373;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+figure img{
+    width: 250px;
+}
+
+.container-horarios-especialidades{
+    border:1px solid #00cad1;
+    background-color: #00cad1;
+    margin: 30px auto 0 auto;
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+}
+
+.container-horarios-especialidades a{
+     text-decoration: none;
+     color: #ffffff;
+     text-transform: uppercase;
+     font-weight: 600;
+}
+
+/*seção rodape*/
+.rodape{
+    display: flex;
+    background-color: #0d6e71;
+    margin-top: 40px;
+}
+
+.container-texto img{
+    width: 120px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+}
+
+.texto-destaque p{
+    color: #ffffff;
+}
+
+@media (max-width: 425px){
+    /* Topo da página */
+    .topo{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .container-logotipo{
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid #0d6e71;
+        width: 85%;
+    }
+
+    .links-topo{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px ;
+        margin: 0 auto;
+        gap: 25px;
+    }
+    /*seção banner da pagina*/
+    .secao-banner{
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .secao-banner h1{
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        padding: 10px;
+        padding-top: 80px;
+        font-size: 18px;
+    }
+
+    /*container informacoes*/
+    .container-informacoes{
+        width: auto;
+        padding: 0 40px;
+        margin: 0 auto;
+    }
+
+    .container-informacoes h3{
+        font-size: 16px;
+        text-indent: 0;
+        margin-left: -30px;
+    }
+
+    .container-texto{
+        width: auto;
+        padding: 40px 10px 20px 10px;
+    }
+
+    .container-informacoes img{
+        display: none;
+    }
+
+    /*seção especialidades*/
+    .container-img-especialidades{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .container-iframe{
+        display: flex;
+        max-width: 330px;
+    }
+
+}
+
+@media (min-width: 426px) and (max-width:768px) {
+    /* Topo da página */
+    .topo{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 0 10px;
+    }
+     /*seção banner da pagina*/
+     .secao-banner{
+        height: 300px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .secao-banner h1{
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        padding: 10px;
+        padding-top: 100px;
+        font-size: 31px;
+    }
+    /*container informacoes*/
+    .container-informacoes h3{
+        font-size: 16px;
+        text-indent: 0;
+        margin-left: -30px;
+    }
+
+    .container-texto{
+        width: auto;
+        padding: 40px 10px 20px 10px;
+    }
+
+    .container-informacoes{
+        width: auto;
+        padding: 0 40px;
+        margin: 0 auto;
+    }
+    .container-informacoes img{
+        display: none;
+    }
+     /*seção especialidades*/
+     .container-img-especialidades{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+      }
+  
+     .container-iframe{
+          max-width: 700px;
+      } 
+}
+
+@media (min-width: 769px) and (max-width:1024px){
+    /* Topo da página */
+    .topo{
+        padding: 0 20px;
+    }
+      /*seção banner da pagina*/
+      .secao-banner{
+        height: 400px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .secao-banner h1{
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        padding: 10px;
+        padding-top: 150px;
+        font-size: 31px;
+    }
+
+     /*seção especialidades*/
+     .container-img-especialidades{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+     }
+     
+     .container-iframe{
+        max-width: 730px;
+    }
+}
+
+
+
+
+
+
